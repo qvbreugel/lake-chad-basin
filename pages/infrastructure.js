@@ -16,13 +16,7 @@ export default function ClimateChange() {
       <div>
         <Modal visible={visible} setVisible={setVisible} />
         <Container>
-          <Issue
-            title={"Infrastructure"}
-            embedSrc={
-              "https://lucid.app/documents/embeddedchart/13e84a5c-636c-4262-92e8-d99392f37ea7"
-            }
-            embedId="PhkiDr39oIUj"
-          />
+          <Issue title={"Infrastructure"} imageSrc="/roads.png" />
         </Container>
       </div>
     </div>
