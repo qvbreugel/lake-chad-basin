@@ -6,6 +6,7 @@ export default function Issue({
   embedId,
   readMore,
   imageSrc,
+  children,
 }) {
   return (
     <>
@@ -25,15 +26,10 @@ export default function Issue({
         )}
       </div>
 
-      <button
-        onClick={() => setVisible(true)}
-        className="hidden cursor-pointer rounded px-4 py-2 border border-primary w-48 mt-4 hover:bg-primary transition-colors ease-in-out duration-300"
-      >
-        <p className="text-gray-50 text-xl">Read more</p>
-      </button>
+      {children}
 
       <Link href="/">
-        <div className="mt-12 flex w-2/3 justify-evenly">
+        <div className="mt-12 flex w-2/3 justify-evenly pb-16">
           <p className="text-4xl text-primary cursor-pointer hover:underline">
             &#8592; Back to home
           </p>
